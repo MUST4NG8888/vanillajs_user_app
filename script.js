@@ -38,7 +38,7 @@ console.log(filteredData);
 
 const requestData = async () => {
   let response = await fetch(`https://api.github.com/users`);
-  data = await response.json();
+  let data = await response.json();
   appState.data = data;
 };
 
@@ -96,8 +96,8 @@ const renderUsers = (data) => {
 
 const init = async () => {
   await requestData();
-  let data = appState.data
-  renderUsers(data)
+  // let data = appState.data
+  renderUsers(appState.data)
   search.addEventListener("input", (e) => {
     searchData(e);
   });
