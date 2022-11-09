@@ -96,6 +96,7 @@ const renderUsers = (data) => {
 
 const init = async () => {
   await requestData();
+  let data = appState.data
   renderUsers(data)
   search.addEventListener("input", (e) => {
     searchData(e);
