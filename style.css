@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+}
+
+#app {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  gap: 20px;
+}
+
+#search {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#userbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+  padding: 20px;
+  border: solid 1px gray;
+  border-radius: 8px;
+}
+
+#userimg {
+  width: 100px
+}
+
+h5 {
+  color: steelblue;
+  font-size: 1rem;
+  margin-top: 5px;
+}
